@@ -1,0 +1,24 @@
+= README
+
+This application is built and deployed using the Github Pages features.
+So it doesn't require any explict CI/CD integration.
+Due to the naming of the project, Github automatically builds and deploys the app.
+
+== Contributing
+
+For making changes to the app, we prefer to follow the Fork + PR style, as that is the best practice.
+
+== Testing in local
+
+Having `docker` installed is the only requirement.
+
+Make changes to the code and run it and see in http://localhost:4000
+```bash
+docker compose up
+```
+
+`CTRL + C` to stop
+
+== Attibution
+
+This site was built using link:https://jekyll-themes.com/perstarke-webdev/oneflow-jekyll-theme[oneflow theme]

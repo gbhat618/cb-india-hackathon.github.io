@@ -12,3 +12,8 @@ main:
   - title: "Help"
     url: /#help
     blank: false
+  
+  # This page is being added here just for the demo purpose that multiple pages can be added
+  - title: "About"
+    url: /about
+    blank: false

@@ -1,0 +1,14 @@
+# main links
+main:
+  - title: "Home"
+    url: /#
+    blank: true
+  - title: "Important Dates"
+    url: /#important-dates
+    blank: false
+  - title: "FAQs"
+    url: /#faqs
+    blank: false
+  - title: "Help"
+    url: /#help
+    blank: false

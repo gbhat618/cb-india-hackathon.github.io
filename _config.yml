@@ -1,13 +1,136 @@
-title: CloudBees India Hackathon 2024
-email: gbhat@cloudbees.com
-description: >- # this means to ignore newlines until "baseurl:"
-  CloudBees India Hackathon 2024; registration starting on 3rd July 2024.
-  Exciting prices await.
-  Build your awesome project and wow everyone
 
-theme: minima
+oneflow-skin    : "aqua" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+locale                   : "en-US"
+title                    : "CloudBees India Hackathon 2024"
+title_separator          : "-"
+subtitle                 : " "
+url                      : "https://cb-india-hackathon.github.io/"
+baseurl                  :
+repository               : "cb-india-hackathon/cb-india-hackathon.github.io" # GitHub username/repo-name
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "/assets/images/logo.webp"
+show-popup               : true
+masthead_title           : " "
+sticky-masthead          : true
+masthead-opacity         : 0.85
+background-image         : # '/assets/images/header.webp'
+background-image-mobile  : # '/assets/images/header.webp'
+background-image-overlay : rgba(255, 255, 255, 0.5)
+
+
+
+footer:
+  links:
+    - label: "Website"
+      icon: "fa fa-globe"
+      url: "https://www.cloudbees.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/company/cloudbees/"
+    - label: "X/Twitter"
+      icon: "fab fa-x-twitter"
+      url: "https://x.com/CloudBees"
+    - label: "Facebook"
+      icon: "fab fa-facebook"
+      url: "https://www.facebook.com/CloudBees/"
+    - label: "Instagram"
+      icon: "fab fa-instagram"
+      url: "https://www.instagram.com/cloudbeesinc/"
+    - label: "YouTube"
+      icon: "fab fa-youtube"
+      url: "https://www.youtube.com/user/CloudBeesTV"
+
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+
+# Plugins (previously gems:)
 plugins:
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
+  - jekyll-include-cache
 
-domain: cb-india-hackathon.github.io
-url: https://cb-india-hackathon.github.io
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Defaults
+defaults:
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: "page"
+

@@ -21,4 +21,4 @@ docker compose up
 
 == Attibution
 
-This site was built using link:https://jekyll-themes.com/perstarke-webdev/oneflow-jekyll-theme[oneflow theme]
+This site was built using link:https://github.com/perstarke-webdev/oneflow-jekyll-theme[oneflow theme]
